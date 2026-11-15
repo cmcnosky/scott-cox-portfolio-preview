@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cmcnosky.github.io/scott-cox-portfolio-preview/sitemap.xml
