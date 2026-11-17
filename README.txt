@@ -2,15 +2,15 @@ SCOTT COX — PORTFOLIO WEBSITE
 
 Live: https://cmcnosky.github.io/scott-cox-portfolio-preview/
 Repository: https://github.com/cmcnosky/scott-cox-portfolio-preview
-Updated November 15, 2026. Static GitHub Pages, main / root.
+Updated November 17, 2026. Static GitHub Pages, main / root.
 
-Homepage: six set-work collections, selected productions, background and contact.
+Homepage: night exterior, direct booking and PDF links, five television titles, a curated set gallery, commercial work and background.
 work/set-work.html: eleven photographs across studio sets, live broadcast, holiday retail, vehicle treatment, restaurant props and location photography.
 work/television.html: television production references and official trailer.
 work/dicks-best-wrapper.html: independently credited commercial production design.
 sources.html: production and image provenance.
 assets/Scott-Cox-Selected-Credits.pdf: selected production history.
-assets/social-preview-set-work-20261115.jpg: current 1200 x 630 sharing card.
+assets/social-preview-night-exterior-20261117.jpg: current 1200 x 630 sharing card.
 
 No package installation or build is required. Relative paths support the repository subpath. Edit static files, push to main, wait for Pages and verify public assets.
 

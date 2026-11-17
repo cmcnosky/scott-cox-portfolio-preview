@@ -28,3 +28,9 @@ body:has(dialog[open]){overflow:hidden}.lightbox{border:0;padding:18px;backgroun
 @media(max-width:360px){.intro h1{font-size:67px}.work-grid{gap:20px 10px}.work-caption h3{font-size:23px}.work-caption p{font-size:9px}.selected-work .text-link{font-size:9px}.set-intro-row h1{font-size:41px}}
 
 .television-page-title{font:500 58px/1.05 var(--display);margin-top:17px}@media(max-width:640px){.television-page-title{font-size:46px}}
+
+/* Keep the three destinations in one line on compact phones. */
+.site-header nav a { white-space: nowrap; }
+@media (max-width: 360px) {
+  .site-header .brand > span + span { display: none; }
+}

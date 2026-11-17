@@ -1,0 +1,142 @@
+.portfolio-home { --home-rule: #c3c3b4; }
+.portfolio-home .site-header { height: 64px; }
+.portfolio-home .site-header nav { margin-left: auto; gap: clamp(18px, 3vw, 42px); }
+.portfolio-home .site-header nav a { font-size: 14px; }
+.mast {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.5fr);
+  align-items: center;
+  gap: clamp(27px, 3.8vw, 56px);
+  padding-block: 28px;
+}
+.base, .frame-label, .title-strip h2, .more-photos > span {
+  font: 600 12px/1.4 var(--body);
+  text-transform: uppercase;
+  letter-spacing: .075em;
+}
+.base { color: var(--accent); }
+.base span { margin-inline: 3px; }
+.identity h1 {
+  font: 600 clamp(76px, 7.6vw, 110px)/.96 var(--display);
+  letter-spacing: -.035em;
+  margin: 8px 0 12px;
+}
+.role { font: 500 clamp(25px, 2.5vw, 35px)/1.04 var(--body); letter-spacing: -.046em; }
+.media { font-size: 15px; color: var(--muted); margin-top: 10px; }
+.hire-links { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; margin-top: 25px; }
+.inquire, .download-credits {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.inquire { background: var(--ink); color: var(--paper); padding: 8px 15px; }
+.inquire:hover { background: var(--accent); }
+.download-credits small { font-size: 11px; color: var(--muted); }
+.portfolio-home a:not(.inquire):hover { text-decoration: underline; text-underline-offset: 4px; }
+.photo-link { display: block; }
+.lead-photo { background: #272a22; color: #f8f4eb; }
+.lead-photo img { width: 100%; aspect-ratio: 2.46; object-fit: cover; }
+.lead-caption { display: flex; padding: 11px 18px 13px; align-items: center; justify-content: space-between; gap: 12px; }
+.lead-caption strong { font: 500 28px/1 var(--display); display: block; }
+.frame-label { display: block; color: #d3c9a7; font-size: 10px; margin-bottom: 3px; }
+.frame-action { font-size: 13px; font-weight: 500; white-space: nowrap; }
+.frame-action span, .editorial-link span { margin-left: 6px; }
+.portfolio-home .photo-link:hover { text-decoration: none; }
+.photo-link:hover :is(h3,strong), .campaign-case:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
+.title-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  border-block: 1px solid var(--home-rule);
+  padding-block: 13px;
+}
+.title-strip h2 { color: var(--accent); flex-shrink: 0; }
+.title-strip ul { display: flex; list-style: none; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; margin: 0; padding: 0; flex: 1; }
+.title-strip li a { display: inline-block; font: 500 clamp(21px,2.15vw,32px)/1.15 var(--display); padding-block: 7px; }
+.photo-selection { padding-block: 28px 6px; }
+.home-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 15px; }
+.home-heading h2, .work-notes h2, .booking h2 { font: 600 clamp(31px,3vw,42px)/1.05 var(--display); letter-spacing: -.018em; }
+.editorial-link { display: inline-flex; padding-block: 7px; align-items: center; color: var(--accent); font-weight: 600; font-size: 14px; }
+.photo-trio { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: clamp(12px,1.6vw,24px); }
+.photo-trio img { aspect-ratio: 1.65; object-fit: cover; }
+.photo-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; padding-top: 8px; }
+.photo-caption h3, .campaign-case h3 { font: 500 clamp(25px,2.2vw,31px)/1.08 var(--display); }
+.photo-caption > span, .campaign-case h3 span { color: var(--accent); font: 400 16px var(--body); }
+.more-photos { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 22px; padding-block: 15px 12px; }
+.more-photos > span { color: var(--muted); }
+.more-photos a { font-size: 14px; padding-block: 5px; }
+.work-notes { display: grid; grid-template-columns: 1fr .89fr; gap: 7%; border-top: 1px solid var(--home-rule); padding-block: 26px 30px; }
+.work-notes h2 { font-size: 29px; margin-bottom: 15px; }
+.campaign-case { display: flex; gap: 15px; align-items: center; }
+.campaign-case img { width: 96px; aspect-ratio: 1.31; object-fit: cover; }
+.campaign-case div > span, .campaign-case p, .attribution { color: var(--muted); font-size: 14px; }
+.campaign-case h3 { margin-block: 2px; }
+.portfolio-home .campaign-case:hover { text-decoration: none; }
+.bio { max-width: 48ch; font-size: 16px; line-height: 1.5; }
+.attribution { margin-block: 8px 2px; }
+.attribution strong { font-weight: 500; color: var(--ink); }
+.booking { color: var(--paper); background: var(--ink); }
+.booking-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 26px; }
+.booking p { margin-top: 5px; color: #d1d3c7; font-size: 14px; }
+.booking-action { display: flex; flex-direction: column; align-items: flex-start; }
+.booking-email { font: 500 clamp(22px,2.2vw,32px)/1.4 var(--body); letter-spacing: -.04em; }
+.booking-email span { font-size: .7em; margin-left: 4px; }
+.copy-email { padding: 6px 0; background: none; border: none; color: #dfdfce; text-decoration: underline; text-underline-offset: 3px; font-size: 13px; }
+.copy-status { font-size: 13px; }
+.booking :focus-visible { outline-color: #edd5b4; }
+@media (max-width: 900px) {
+  .mast { grid-template-columns: minmax(0,.85fr) minmax(0,1.1fr); gap: 24px; }
+  .identity h1 { font-size: 78px; }
+  .base { font-size: 11px; }
+  .lead-photo img { aspect-ratio: 1.88; }
+  .title-strip { display: block; padding-block: 11px; }
+  .title-strip ul { margin-top: 2px; }
+}
+@media (max-width: 680px) {
+  .portfolio-home .wrap { width: calc(100% - 36px); }
+  .portfolio-home .site-header { min-height: 56px; height: auto; flex-wrap: nowrap; padding-block: 8px; gap: 8px; }
+  .portfolio-home .site-header nav { position: static; width: auto; order: 0; gap: 16px; }
+  .portfolio-home .site-header .brand-sub { display: none; }
+  .portfolio-home .site-header .brand { gap: 7px; }
+  .portfolio-home .brand-mark { width: 29px; height: 31px; font-size: 21px; }
+  .mast { grid-template-columns: 1fr; gap: 17px; padding-block: 17px; }
+  .identity h1 { font-size: clamp(64px, 15vw, 85px); margin-block: 4px 6px; }
+  .role { font-size: clamp(20px, 5.1vw, 28px); }
+  .role br { display: none; }
+  .media { margin-top: 5px; font-size: 14px; }
+  .hire-links { margin-top: 10px; }
+  .lead-photo img { aspect-ratio: 2.49; }
+  .lead-caption { padding: 9px 12px; }
+  .lead-caption strong { font-size: 23px; }
+  .lead-caption > div { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .frame-label { font-size: 9px; margin: 0; }
+  .frame-action { font-size: 12px; }
+  .title-strip ul { justify-content: flex-start; gap: 0 18px; }
+  .title-strip li a { font-size: 23px; padding-block: 3px; }
+  .photo-selection { padding-top: 18px; }
+  .home-heading { margin-bottom: 10px; }
+  .home-heading h2 { font-size: 30px; }
+  .editorial-link { font-size: 13px; }
+  .photo-trio { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .photo-trio > :last-child { display: grid; grid-template-columns: 60px 1fr; grid-column: 1/-1; align-items: center; gap: 12px; border-top: 1px solid var(--home-rule); padding-top: 10px; }
+  .photo-trio > :last-child img { aspect-ratio: 1.38; }
+  .photo-trio > :last-child .photo-caption { padding: 0; }
+  .photo-caption h3 { font-size: 23px; }
+  .photo-caption > span { font-size: 14px; }
+  .more-photos { gap: 0 15px; padding-block: 8px 10px; }
+  .more-photos > span { width: 100%; font-size: 10px; }
+  .work-notes { grid-template-columns: 1fr; gap: 20px; padding-block: 20px; }
+  .work-notes section + section { border-top: 1px solid var(--home-rule); padding-top: 19px; }
+  .work-notes h2 { margin-bottom: 11px; }
+  .booking-inner { align-items: flex-start; flex-direction: column; gap: 13px; padding-block: 21px; }
+  .booking h2 { font-size: 32px; }
+}
+@media (max-width: 360px) {
+  .portfolio-home .site-header nav { gap: 11px; }
+  .frame-label { display: none; }
+  .home-heading { flex-wrap: wrap; gap: 0 8px; }
+}

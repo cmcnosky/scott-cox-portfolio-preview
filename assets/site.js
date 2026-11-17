@@ -1,5 +1,18 @@
 (() => {
   'use strict';
+  const copyEmail = document.querySelector('[data-copy-email]');
+  if (copyEmail && navigator.clipboard?.writeText) {
+    copyEmail.hidden = false;
+    const status = copyEmail.nextElementSibling;
+    copyEmail.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(copyEmail.dataset.copyEmail);
+        status.textContent = 'Email address copied.';
+      } catch {
+        status.textContent = 'Select the address above to copy it.';
+      }
+    });
+  }
   const dialog = document.querySelector('#image-dialog');
   if (!dialog) return;
   const gallery = [...document.querySelectorAll('[data-gallery]')];
